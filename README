@@ -1,0 +1,28 @@
+In order to apply the popcorn effect, you need to target a div such as this:
+$('#popcorn').popcorn({   
+    fadeImage: 'images/white-box.png',
+    fadeImageSpeed: 100,
+    fadeSpeed: 'slow',
+    imageCount: 3,
+    timeout: 2000
+});
+
+There are a few options that you can set.
+fadeImage (optional) - fades into this image before popping in a new image
+fadeImageSpeed (optional) - the speed that the existing image fades into the fade image
+fadeSpeed - the speed of the fade into the new image
+imageCount - the amount of images that will be displayed
+timeout - how long the images appear before new ones are selected
+
+The div that you target will need to be structured the following way:
+<div id="popcorn">
+	<div class="popcornContent">
+		<ul id="nolist">
+			<li><a href="#"><img src="image.jpg"/></a></li>
+			<li><a href="#"><img src="image.jpg"/></a></li>
+			<li><a href="#"><img src="image.jpg"/></a></li>
+			<li><a href="#"><img src="image.jpg"/></a></li>
+			<li><a href="#"><img src="image.jpg"/></a></li>
+		</ul>
+	</div>
+</div>

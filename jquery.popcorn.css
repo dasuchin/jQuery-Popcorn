@@ -1,8 +1,8 @@
 #popcorn {
-		width: 1026px;
-		height: 359px; /* you need to specify minimum height value */
-		float:left;
-		clear:both;
+	width: 1026px;
+	height: 359px; /* you need to specify minimum height value */
+	float:left;
+	clear:both;
 }
 
 .popcornContent {

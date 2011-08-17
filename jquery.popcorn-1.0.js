@@ -94,17 +94,6 @@ next = function(elements, settings, currentImages, last) {
 	currentImages[randSpot] = imageUrl;
 	
 	if(settings.fadeImage) {
-		/*$(elements[randSpot]).fadeOut(100, function() {
-			$(elements[randSpot]).html('<img src="'+settings.fadeImage+'"/>');
-			$(elements[randSpot]).fadeIn(100);
-		});
-		
-		setTimeout(function() {
-			$(elements[randSpot]).fadeOut(100, function() {
-				$(elements[randSpot]).fadeIn(settings.fadeSpeed);
-				$(elements[randSpot]).html('<a href="'+imageLink+'"><img src="'+imageUrl+'"/></a>');
-			});
-		}, settings.fadeImageSpeed);*/
 		
 		$('#'+spotId+' > a > img.fadeImage').css('z-index', '101');
 		
