@@ -1,0 +1,61 @@
+#popcorn {
+		width: 1026px;
+		height: 359px; /* you need to specify minimum height value */
+		float:left;
+		clear:both;
+}
+
+.popcornContent {
+	float:left;
+	width:60%;
+	clear:both;
+}
+
+.popcornContent a {
+	outline:none;
+}
+
+.popcornContent li {
+	height:359px;
+	overflow:hidden;
+}
+ 
+ul.nolist,
+ul.nolist li {
+	display:block;
+	list-style:none;
+	padding:0;
+	margin:0;
+}
+ 
+ul.nolist li {
+	float: left;
+	padding: 3px;
+	padding-right: 10px;
+	height: 359px;
+	width: 192px;
+	overflow: hidden;
+	background: url(images/featured_off.png) no-repeat;
+}
+
+ul.nolist li:hover {
+	background: url(images/featured_over.png) no-repeat;
+}
+
+ul.nolist li .itemImage {
+	width: 176px;
+	height: 342px;
+	border: 0;
+	z-index: 100;
+	position: relative;
+	padding: 4px;
+}
+
+ul.nolist li .fadeImage {
+	width: 176px;
+	height: 342px;
+	border: 0;
+	z-index: 99;
+	position: absolute;
+	padding: 4px;
+}
